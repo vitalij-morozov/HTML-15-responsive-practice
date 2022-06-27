@@ -17,105 +17,205 @@
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
+    <header class="header">
+        <div class="container">
+            <div class="header__logo-container">
+                <a href="#">
+                    <img src="./img/logo.webp" alt="logo" class="header__logo-icon"></a>
+            </div>
+            <div class="header__navbar-container">
+                <i class="fa fa-bars menu-icon" aria-hidden="true"></i>
+                <nav class="header__navbar">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Pages</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero-section section">
             <div class="container">
-                <div class="header__logo-container">
-                    <img src="./img/logo.webp" alt="logo" class="header__logo-icon">
-
+                <div class="hero__left">
+                    <h5 class="section-subtitle">This is me</h5>
+                    <h1 class="hero__title">John Doe</h1>
+                    <p class="hero__text">You will begin to realise why this exercise is called the Dickens Pattern
+                        with
+                        reference to the ghost showing Scrooge some different futures.</p>
+                    <button class="hero__btn">Discover Now</button>
                 </div>
-                <div class="header__navbar-container">
-                    <i class="fa fa-bars menu-icon" aria-hidden="true"></i>
-                    <nav class="header__navbar">
-                        <a href="#">Home</a>
-                        <a href="#">About</a>
-                        <a href="#">Services</a>
-                        <a href="#">Portfolio</a>
-                        <a href="#">Pricing</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Pages</a>
-                        <a href="#">Contact</a>
-                    </nav>
+                <div class="hero__right">
+                    <img class="hero__image" src="./img/hero-img.webp" alt="hero-img">
                 </div>
             </div>
-        </header>
-        <main class="main">
+        </section>
 
-            <section class="hero-section section">
-                <div class="container">
-                    <div class="hero__left">
-                        <h5 class="section-subtitle">This is me</h5>
-                        <h1 class="hero__title">John Doe</h1>
-                        <p class="hero__text">You will begin to realise why this exercise is called the Dickens Pattern
-                            with
-                            reference to the ghost showing Scrooge some different futures.</p>
-                        <button class="hero__btn">Discover Now</button>
-                    </div>
-                    <div class="hero__right">
-                        <img class="hero__image" src="./img/hero-img.webp" alt="hero-img">
-                    </div>
+        <section class="services-section section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title"><a href="">Our Services</a> </h2>
+                    <p class="section-header__text">At about this time of year, some months after New Year’s
+                        resolutions
+                        have been made and kept, or made and neglected.</p>
                 </div>
-            </section>
-
-            <section class="services-section section">
-                <div class="container">
-                    <div class="section-header">
-                        <h2 class="section-header__title">Our Services</h2>
-                        <p class="section-header__text">At about this time of year, some months after New Year’s
-                            resolutions
-                            have been made and kept, or made and neglected.</p>
-                    </div>
-                    <div class="services__cards">
-                        <div class="services__card">
+                <div class="services__cards">
+                    <div class="services__card">
+                        <div class="services__card__header">
                             <i class="fa fa-camera services__card__icon" aria-hidden="true"></i>
-
-                            <h4 class="services__card__title">Web Design</h4>
-                            <p class="services__card__text">“It is not because things are difficult that we do not dare;
-                                it
-                                is because we do not dare that they are difficult.”</p>
+                            <h4 class="services__card__title"><a href="#">Web Design</a> </h4>
                         </div>
-                        <div class="services__card">
+                        <p class="services__card__text">“It is not because things are difficult that we do not dare;
+                            it
+                            is because we do not dare that they are difficult.”</p>
+                    </div>
+                    <div class="services__card">
+                        <div class="services__card__header">
                             <i class="fa fa-mobile services__card__icon" aria-hidden="true"></i>
-
-                            <h4 class="services__card__title">Web Design</h4>
-                            <p class="services__card__text">“It is not because things are difficult that we do not dare;
-                                it
-                                is because we do not dare that they are difficult.”</p>
+                            <h4 class="services__card__title"><a href="#">Photography</a></h4>
                         </div>
-                        <div class="services__card">
+                        <p class="services__card__text">“It is not because things are difficult that we do not dare;
+                            it
+                            is because we do not dare that they are difficult.”</p>
+                    </div>
+                    <div class="services__card">
+                        <div class="services__card__header">
                             <i class="fa fa-pie-chart services__card__icon" aria-hidden="true"></i>
-                            <h4 class="services__card__title">Web Design</h4>
-                            <p class="services__card__text">“It is not because things are difficult that we do not dare;
-                                it
-                                is because we do not dare that they are difficult.”</p>
+                            <h4 class="services__card__title"><a href="#">Clipping Path</a></h4>
                         </div>
-                        <div class="services__card">
-                            <i class="fa fa-pie-chart services__card__icon" aria-hidden="true"></i>
-                            <h4 class="services__card__title">Web Design</h4>
-                            <p class="services__card__text">“It is not because things are difficult that we do not dare;
-                                it
-                                is because we do not dare that they are difficult.”</p>
+                        <p class="services__card__text">“It is not because things are difficult that we do not dare;
+                            it
+                            is because we do not dare that they are difficult.”</p>
+                    </div>
+                    <div class="services__card">
+                        <div class="services__card__header">
+                            <i class="fa fa-picture-o services__card__icon" aria-hidden="true"></i>
+                            <h4 class="services__card__title"><a href="#">Apps Interface</a></h4>
                         </div>
-                        <div class="services__card">
-                            <i class="fa fa-pie-chart services__card__icon" aria-hidden="true"></i>
-                            <h4 class="services__card__title">Web Design</h4>
-                            <p class="services__card__text">“It is not because things are difficult that we do not dare;
-                                it
-                                is because we do not dare that they are difficult.”</p>
+                        <p class="services__card__text">“It is not because things are difficult that we do not dare;
+                            it
+                            is because we do not dare that they are difficult.”</p>
+                    </div>
+                    <div class="services__card">
+                        <div class="services__card__header">
+                            <i class="fa fa-rocket services__card__icon" aria-hidden="true"></i>
+                            <h4 class="services__card__title"><a href="#">Graphic Design</a></h4>
                         </div>
-                        <div class="services__card">
-                            <i class="fa fa-pie-chart services__card__icon" aria-hidden="true"></i>
-                            <h4 class="services__card__title">Web Design</h4>
-                            <p class="services__card__text">“It is not because things are difficult that we do not dare;
-                                it
-                                is because we do not dare that they are difficult.”</p>
+                        <p class="services__card__text">“It is not because things are difficult that we do not dare;
+                            it
+                            is because we do not dare that they are difficult.”</p>
+                    </div>
+                    <div class="services__card">
+                        <div class="services__card__header">
+                            <i class="fa fa-laptop services__card__icon" aria-hidden="true"></i>
+                            <h4 class="services__card__title"><a href="#">Web Design</a></h4>
                         </div>
+                        <p class="services__card__text">“It is not because things are difficult that we do not dare;
+                            it
+                            is because we do not dare that they are difficult.”</p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-        </main>
-    </div>
+        <section class="stats-section section">
+            <div class="container">
+                <div class="stats__card">
+                    <span class="stats__number">2536</span>
+                    <p class="stats__comment">Projects Completes</p>
+                </div>
+                <div class="stats__card">
+                    <span class="stats__number">6784</span>
+                    <p class="stats__comment">Projects Completes</p>
+                </div>
+                <div class="stats__card">
+                    <span class="stats__number">2239</span>
+                    <p class="stats__comment">Projects Completes</p>
+                </div>
+                <div class="stats__card">
+                    <span class="stats__number">434</span>
+                    <p class="stats__comment">Projects Completes</p>
+                </div>
+            </div>
+        </section>
+        <section class="features-section section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title"><a href="">Our Latest Featured Projects</a> </h2>
+                    <p class="section-header__text">Who are in extremely love with eco friendly system.</p>
+                </div>
+                <div class="features__filter">
+                    <ul>
+                        <li><a href="#" class="feature__filter__item item-one active">ALL</a></li>
+                        <li><a href="#" class="feature__filter__item item-two">vector</a></li>
+                        <li><a href="#" class="feature__filter__item item-three">raster</a></li>
+                        <li><a href="#" class="feature__filter__item item-four">ui/ux</a></li>
+                        <li><a href="#" class="feature__filter__item item-five">printing</a></li>
+                    </ul>
+                </div>
+                <div class="features__cards">
+                    <div class="features__card">
+                        <div class="features__card__image-container">
+                            <img class="features__card__image" src="./img/feature.webp" alt="feature">
+                            <div class="features__card__image-overlay"><img src="./img/feat22.webp" alt="binocular">
+                            </div>
+                        </div>
+                        <h4 class="features__card__title">2D Vinyl Design</h4>
+                        <span class="features__card__category">vector</span>
+                    </div>
+                    <div class="features__card">
+                        <div class="features__card__image-container">
+                            <img class="features__card__image" src="./img/feature.webp" alt="feature">
+                            <div class="features__card__image-overlay"><img src="./img/feat22.webp" alt="binocular">
+                            </div>
+                        </div>
+                        <h4 class="features__card__title">2D Vinyl Design</h4>
+                        <span class="features__card__category">vector</span>
+                    </div>
+                    <div class="features__card">
+                        <div class="features__card__image-container">
+                            <img class="features__card__image" src="./img/feature.webp" alt="feature">
+                            <div class="features__card__image-overlay"><img src="./img/feat22.webp" alt="binocular">
+                            </div>
+                        </div>
+                        <h4 class="features__card__title">2D Vinyl Design</h4>
+                        <span class="features__card__category">vector</span>
+                    </div>
+                    <div class="features__card">
+                        <div class="features__card__image-container">
+                            <img class="features__card__image" src="./img/feature.webp" alt="feature">
+                            <div class="features__card__image-overlay"><img src="./img/feat22.webp" alt="binocular">
+                            </div>
+                        </div>
+                        <h4 class="features__card__title">2D Vinyl Design</h4>
+                        <span class="features__card__category">vector</span>
+                    </div>
+                    <div class="features__card">
+                        <div class="features__card__image-container">
+                            <img class="features__card__image" src="./img/feature.webp" alt="feature">
+                            <div class="features__card__image-overlay"><img src="./img/feat22.webp" alt="binocular">
+                            </div>
+                        </div>
+                        <h4 class="features__card__title">2D Vinyl Design</h4>
+                        <span class="features__card__category">vector</span>
+                    </div>
+                    <div class="features__card">
+                        <div class="features__card__image-container">
+                            <img class="features__card__image" src="./img/feature.webp" alt="feature">
+                            <div class="features__card__image-overlay"><img src="./img/feat22.webp" alt="binocular">
+                            </div>
+                        </div>
+                        <h4 class="features__card__title">2D Vinyl Design</h4>
+                        <span class="features__card__category">vector</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>

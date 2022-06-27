@@ -1,11 +1,12 @@
-/* GENERAL CSS RULES  */
+/* ======= GENERAL CSS RULES ========= */
+
 body {
   background-color: rgb(233, 241, 243);
 }
 .section {
   padding: 6% 0;
-  box-shadow: 0px 0px 1px black;
   background-color: #fff;
+  /* box-shadow: 0px 0px 1px black; */
 }
 .container {
   padding: 0;
@@ -18,14 +19,17 @@ body {
 p {
   color: grey;
 }
-/* HEADER SECTION */
+
+/*========== HEADER SECTION =========*/
+
 .header {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   position: sticky;
   top: 0;
+  z-index: 3;
   width: 100%;
   background-color: #fff;
-  box-shadow: 0px 0px 1px black;
+  /* box-shadow: 0px 0px 1px black; */
 }
 .header .container {
   display: flex;
@@ -41,6 +45,7 @@ p {
 }
 .header__logo-icon {
   margin-right: 8px;
+  padding: 10px;
 }
 .header__logo-text {
   font-size: 24px;
@@ -50,7 +55,9 @@ p {
   font-size: 24px;
   cursor: pointer;
 }
-/* HERO SECTION */
+
+/*======== HERO SECTION ========*/
+
 .hero-section .container {
   display: flex;
   flex-direction: column;
@@ -80,6 +87,9 @@ p {
   text-transform: uppercase;
   padding: 12px 20px;
 }
+.hero__btn:hover {
+  box-shadow: -6px 10px 7px -3px rgb(0 0 0 / 78);
+}
 .hero__right {
   align-self: center;
   flex-basis: 40%;
@@ -89,17 +99,20 @@ p {
   width: 70%;
 }
 
-/* SERVICES section */
+/* ========SERVICES section============ */
+
 .section-header {
   text-align: center;
   width: 80%;
   margin: 0 auto;
+  padding-bottom: 1.5rem;
 }
 .section-header__title {
   font-size: 1.8rem;
   padding-bottom: 0.8rem;
 }
 .section-header__text {
+  font-size: 0.8rem;
   padding-bottom: 0.8rem;
 }
 .services__cards {
@@ -115,10 +128,110 @@ p {
 }
 .services__card__icon {
   font-size: 30px;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
 }
 .services__card__title {
   padding-bottom: 0.5rem;
   font-size: 1.1rem;
   font-weight: 600;
+}
+.services__card__header:hover {
+  color: blueviolet;
+}
+
+/* =========STATS section=========== */
+.stats-section {
+  background-image: linear-gradient(
+    to right,
+    rgb(70, 70, 194),
+    rgb(161, 161, 219)
+  );
+}
+.stats-section .container {
+  display: grid;
+  grid-template-columns: auto;
+  color: #fff;
+  row-gap: 1rem;
+}
+.stats__card {
+  text-align: center;
+}
+.stats__number {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.stats__comment {
+  color: #fff;
+}
+
+/* =======FEATURES section======= */
+
+.features__filter {
+  text-align: center;
+}
+.features__filter ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.feature__filter__item {
+  padding-bottom: 4px;
+  transition: 0.5s ease-in-out;
+}
+.feature__filter__item.active {
+  color: blueviolet;
+}
+.feature__filter__item:hover {
+  border-bottom: 2px solid black;
+}
+.features__card__image-container {
+  position: relative;
+}
+.features__cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+.features__card {
+  text-align: center;
+  padding: 1rem;
+}
+.features__card__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.features__card__image-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(
+    to right,
+    rgb(68, 68, 161),
+    rgb(230, 165, 230)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.features__card__image-overlay img {
+  text-align: center;
+}
+.features__card__image-overlay:hover {
+  opacity: 0.8;
+}
+.features__card__title {
+  padding: 0.4rem 0;
 }

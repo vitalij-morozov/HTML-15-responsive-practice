@@ -4,9 +4,16 @@
     grid-template-columns: auto auto;
     gap: 1.5rem;
   }
+  .stats-section .container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
 }
 
 @media screen and (min-width: 750px) {
+  html {
+    font-size: 18px;
+  }
   body {
     background-color: #fff;
   }
@@ -33,5 +40,19 @@
   }
   .services__cards {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .stats-section .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .features__filter ul {
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+  }
+  .features__cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .features__card {
+    padding: 1rem;
   }
 }
