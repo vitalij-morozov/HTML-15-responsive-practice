@@ -55,7 +55,17 @@ p {
   font-size: 24px;
   cursor: pointer;
 }
-
+.header__navbar {
+  font-size: 15px;
+  padding: 0 10px;
+  font-weight: 600;
+}
+.header__navbar__link.active {
+  color: #8490ff;
+}
+.header__navbar__link:hover {
+  color: #8490ff;
+}
 /*======== HERO SECTION ========*/
 
 .hero-section .container {
@@ -136,7 +146,7 @@ p {
   font-weight: 600;
 }
 .services__card__header:hover {
-  color: blueviolet;
+  color: #8490ff;
 }
 
 /* =========STATS section=========== */
@@ -242,17 +252,20 @@ p {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
-  row-gap: 1rem;
+  gap: 1.5rem;
 }
 .choose-plan__card {
+  margin: 0 7%;
   text-align: center;
   padding: 2.5rem 1rem;
+  background-color: #f9f9ff;
   transition: all 0.3s ease;
 }
 .choose-plan__card-top h3 {
   width: fit-content;
   height: fit-content;
-  padding: 60px 70px;
+  padding: 30px 40px;
+  border: 30px solid #8490ff73;
   font-weight: normal;
   font-size: 3rem;
   background-color: rgba(211, 211, 211, 0.322);
@@ -273,14 +286,15 @@ p {
   padding: 0;
   margin: 0;
   margin-bottom: 1.5rem;
+  color: #777;
 }
 .choose-plan__list li {
   padding: 10px 0;
-  border-top: 2px solid black;
+  border-top: 1px solid #eee;
   font-size: 0.9rem;
 }
 .choose-plan__list li:last-child {
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid #eee;
 }
 .choose-plan__bottom h2 {
   font-size: 2.2rem;
@@ -374,7 +388,6 @@ p {
   font-weight: 600;
   line-height: 1.1;
   padding: 1rem 0;
-  display: block;
 }
 .blog__text {
   color: rgb(119, 119, 119);
@@ -386,4 +399,33 @@ p {
 }
 .blog__post:hover .blog__image {
   transform: scale(0.98);
+}
+
+/* ======SPONSORS section====== */
+
+.sponsors-section {
+  background-image: linear-gradient(
+    to right,
+    rgb(70, 70, 194),
+    rgb(161, 161, 219)
+  );
+}
+.sponsors-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem 4%;
+}
+.sponsors__image-container {
+  display: none;
+}
+.sponsors__image-container:first-child,
+.sponsors__image-container:last-child {
+  display: initial;
+}
+.sponsors__image-container img {
+  opacity: 0.6;
+}
+.sponsors__image-container img:hover {
+  opacity: 1;
 }
