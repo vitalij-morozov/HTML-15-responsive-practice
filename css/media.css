@@ -52,7 +52,10 @@
   .features__cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .features__card {
-    padding: 1rem;
+  .choose-plan__cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .blog__posts {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
